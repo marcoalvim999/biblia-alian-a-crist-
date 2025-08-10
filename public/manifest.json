@@ -1,0 +1,22 @@
+{
+  "name": "Bíblia Aliança Cristã",
+  "short_name": "Bíblia AC",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#1a5276",
+  "description": "Bíblia Almeida Corrigida Fiel - Edição Aliança Cristã",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait"
+}
