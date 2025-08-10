@@ -1,0 +1,108 @@
+:root {
+  --color-papyrus: #f5f5f5;
+  --color-wood: #1a5276;
+  --color-scripture: #333;
+  --color-gold: #f1c40f;
+  --color-header: #1a5276;
+  --color-button: #2874a6;
+  --color-button-hover: #1a5276;
+  --color-note-bg: rgba(255, 255, 255, 0.95);
+  --color-dark-bg: #1a1a1a;
+  --color-dark-text: #e6e6e6;
+  --color-dark-header: #0d1b2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.8;
+  background-color: var(--color-papyrus);
+  color: var(--color-scripture);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.dark-mode {
+  background-color: var(--color-dark-bg);
+  color: var(--color-dark-text);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--color-header);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0 1rem;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(26, 82, 118, 0.1);
+  border-bottom: 1px solid var(--color-wood);
+  gap: 1rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-wood);
+  border-radius: 4px;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  color: var(--color-scripture);
+}
+
+.bible-content {
+  flex-grow: 1;
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.verse {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.verse-number {
+  font-weight: bold;
+  color: var(--color-wood);
+  margin-right: 8px;
+  position: absolute;
+  left: -25px;
+  top: 0;
+}
+
+.verse-text {
+  display: block;
+  margin-left: 25px;
+}
